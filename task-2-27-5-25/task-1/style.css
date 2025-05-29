@@ -13,6 +13,7 @@ body {
   width: 100%;
   top: 0;
 } */
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -269,7 +270,7 @@ h3 {
 }
 .main-content .side-right {
   background-color: #fff;
-  width: 100%;
+  width: 70%;
   background-color: #fff;
   padding: 12px;
 }
@@ -353,6 +354,7 @@ h3 {
   justify-content: space-between;
   width: 50%;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-content .side-right .send .send1 {
@@ -442,4 +444,34 @@ h3 {
 .main-content .side-right .contact .contact-info table td a {
   color: #677df7;
   text-decoration: none;
+}
+@media (max-width: 1176px) {
+  .header .navbar ul {
+    display: none;
+  }
+  .header.navbar {
+    width: 100%;
+  }
+}
+@media (max-width: 1047px) {
+  .header.navbar {
+    width: 100%;
+  }
+}
+@media (max-width: 980px) {
+  .main-content .side-right .name-out .name .fullname {
+    flex-direction: column;
+  }
+  .main-content .side-right .name-out .name .fullname .map {
+    text-align: start;
+  }
+  .main-content .side-right .name-out .name .bookmark {
+    display: none;
+  }
+}
+
+@media (max-width: 1025) {
+  .main-content .side-right .send {
+    row-gap: 10px;
+  }
 }
