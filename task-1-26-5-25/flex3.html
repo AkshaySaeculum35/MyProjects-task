@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-3 flexbox</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-1 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+      }
+      .inside-outer11 {
+        display: flex;
+        width: 100%;
+        height: 50%;
+      }
+      .inside-outer111 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(142, 132, 132);
+      }
+      .inside {
+        width: 100%;
+      }
+      .inside2 {
+        width: 100%;
+        background-color: rgb(65, 14, 14);
+        border-radius: 500px 0 0 500px;
+      }
+      .inside3 {
+        width: 100%;
+        background-color: rgb(65, 14, 14);
+        border-radius: 0 500px 500px 0;
+      }
+      .inside4 {
+        width: 100%;
+        background-color: rgb(87, 47, 151);
+        border-radius: 500px 0 0 500px;
+      }
+      .inside5 {
+        width: 100%;
+        background-color: rgb(87, 47, 151);
+        border-radius: 0 500px 500px 0;
+      }
+      .inside6 {
+        width: 100%;
+        background-color: rgb(40, 184, 212);
+        border-radius: 500px 0 0 500px;
+      }
+      .inside7 {
+        width: 100%;
+        background-color: rgb(40, 184, 212);
+        border-radius: 0 500px 500px 0;
+      }
+
+      .inside-outer112 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(85, 94, 97);
+      }
+      .inside-outer113 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(72, 47, 47);
+      }
+      .inside-outer114 {
+        width: 100%;
+        display: flex;
+        background-color: red;
+      }
+      .inside-outer12 {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        background-color: blanchedalmond;
+      }
+      .inside-outer121 {
+        width: 100%;
+        display: flex;
+        background-color: red;
+      }
+
+      .inside-outer122 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(72, 47, 47);
+      }
+      .inside-outer123 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(85, 94, 97);
+      }
+      .inside-outer124 {
+        width: 100%;
+        display: flex;
+        background-color: rgb(142, 132, 132);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-1">
+      <div class="inside-outer11">
+        <div class="inside-outer111">
+          <div class="inside"></div>
+          <div class="inside2"></div>
+        </div>
+
+        <div class="inside-outer112">
+          <div class="inside3"></div>
+          <div class="inside"></div>
+        </div>
+
+        <div class="inside-outer113">
+          <div class="inside"></div>
+          <div class="inside4"></div>
+        </div>
+        <div class="inside-outer114">
+          <div class="inside5"></div>
+          <div class="inside"></div>
+        </div>
+      </div>
+      <div class="inside-outer12">
+        <div class="inside-outer121"></div>
+        <div class="inside-outer122">
+          <div class="inside"></div>
+          <div class="inside6"></div>
+        </div>
+        <div class="inside-outer123">
+          <div class="inside7"></div>
+          <div class="inside"></div>
+        </div>
+        <div class="inside-outer124"></div>
+      </div>
+    </div>
+  </body>
+</html>

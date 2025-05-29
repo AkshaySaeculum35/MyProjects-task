@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2- flexbox</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-1 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+      }
+      .div1 {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+      }
+      .div2 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(141, 104, 104);
+      }
+      .div3 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(41, 182, 93);
+      }
+      .div4 {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(40, 108, 137);
+      }
+      .div11 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .div111 {
+        background-color: azure;
+        width: 30%;
+        height: 100%;
+      }
+      .div112 {
+        background-color: rgb(102, 18, 18);
+        width: 70%;
+        height: 100%;
+      }
+      .div12 {
+        display: flex;
+        background-color: yellow;
+        height: 100%;
+      }
+      .div121 {
+        margin: 45px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 20px;
+        background-color: #fff;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .div1211 {
+        width: 45%;
+        background-color: rgb(232, 105, 126);
+      }
+      .div2 {
+        height: 100%;
+      }
+      .div21 {
+        background-color: rgb(139, 104, 104);
+        height: 30%;
+      }
+      .div22 {
+        background-color: rgb(238, 236, 236);
+        height: 20%;
+      }
+      .div23 {
+        background-color: rgb(89, 81, 81);
+        height: 20%;
+      }
+      .div24 {
+        background-color: rgb(29, 20, 20);
+        height: 30%;
+      }
+      .div3 {
+        height: 100%;
+      }
+      .div31 {
+        background-color: rgb(246, 108, 108);
+        height: 20%;
+      }
+      .div32 {
+        background-color: rgb(246, 148, 148);
+        height: 30%;
+        display: flex;
+      }
+      .div33 {
+        background-color: rgb(246, 108, 108);
+        height: 30%;
+        display: flex;
+      }
+      .div331 {
+        width: 20%;
+      }
+      .div332 {
+        width: 60%;
+      }
+      .div333 {
+        width: 20%;
+      }
+      .div3321 {
+        height: 70%;
+        background-color: #fff;
+      }
+      .div3322 {
+        height: 30%;
+      }
+      .div34 {
+        background-color: rgb(233, 47, 47);
+        height: 20%;
+      }
+      .div321 {
+        width: 20%;
+      }
+      .div322 {
+        width: 60%;
+      }
+      .div323 {
+        width: 20%;
+      }
+      .div3221 {
+        height: 30%;
+      }
+      .div3222 {
+        height: 70%;
+        background-color: #fff;
+      }
+      .div41 {
+        height: 45%;
+        display: flex;
+      }
+      .div411 {
+        width: 20%;
+        background-color: rgb(134, 73, 73);
+      }
+      .div412 {
+        width: 60%;
+        background-color: rgb(231, 221, 221);
+      }
+      .div413 {
+        width: 20%;
+
+        background-color: rgb(134, 73, 73);
+      }
+      .div42 {
+        height: 35%;
+        display: flex;
+      }
+      .div421 {
+        width: 20%;
+        background-color: rgb(79, 4, 4);
+      }
+      .div422 {
+        width: 60%;
+        background-color: rgb(231, 221, 221);
+      }
+      .div423 {
+        width: 20%;
+
+        background-color: rgb(79, 4, 4);
+      }
+      .div43 {
+        height: 20%;
+        display: flex;
+      }
+      .div431 {
+        width: 20%;
+        background-color: rgb(112, 11, 11);
+      }
+      .div432 {
+        width: 60%;
+        background-color: rgb(231, 221, 221);
+      }
+      .div433 {
+        width: 20%;
+
+        background-color: rgb(112, 11, 11);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-1">
+      <div class="div1">
+        <div class="div11">
+          <div class="div111"></div>
+          <div class="div112"></div>
+        </div>
+        <div class="div12">
+          <div class="div121">
+            <div class="div1211"></div>
+            <div class="div1211"></div>
+            <div class="div1211"></div>
+            <div class="div1211"></div>
+          </div>
+        </div>
+      </div>
+      <div class="div2">
+        <div class="div21"></div>
+        <div class="div22"></div>
+        <div class="div23"></div>
+        <div class="div24"></div>
+      </div>
+      <div class="div3">
+        <div class="div31"></div>
+        <div class="div32">
+          <div class="div321"></div>
+          <div class="div322">
+            <div class="div3221"></div>
+            <div class="div3222"></div>
+          </div>
+          <div class="div323"></div>
+        </div>
+        <div class="div33">
+          <div class="div331"></div>
+          <div class="div332">
+            <div class="div3321"></div>
+            <div class="div3322"></div>
+          </div>
+          <div class="div333"></div>
+        </div>
+        <div class="div34"></div>
+      </div>
+      <div class="div4">
+        <div class="div41">
+          <div class="div411"></div>
+          <div class="div412"></div>
+          <div class="div413"></div>
+        </div>
+        <div class="div42">
+          <div class="div421"></div>
+          <div class="div422"></div>
+          <div class="div423"></div>
+        </div>
+        <div class="div43">
+          <div class="div431"></div>
+          <div class="div432"></div>
+          <div class="div433"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task -4 flexbox</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-1 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .div1 {
+        width: 35%;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .div11 {
+        height: 25%;
+        background-color: #9b8d8d;
+        border-radius: 30px 0 0 0;
+      }
+      .div12 {
+        height: 50%;
+        background-color: #ad7c7c;
+      }
+      .div13 {
+        height: 25%;
+        background-color: #9b8d8d;
+        border-radius: 0px 0 0 30px;
+      }
+      .div2 {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+      }
+      .div21 {
+        height: 25%;
+        background-color: #822121;
+      }
+      .div22 {
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e91616;
+      }
+      .div23 {
+        height: 25%;
+        background-color: #822121;
+      }
+      .div3 {
+        width: 35%;
+
+        display: flex;
+        flex-direction: column;
+      }
+      .div31 {
+        height: 25%;
+        background-color: #9b8d8d;
+        border-radius: 0 30px 0 0;
+      }
+      .div32 {
+        height: 50%;
+        background-color: #ad7c7c;
+      }
+      .div33 {
+        height: 25%;
+        background-color: #9b8d8d;
+        border-radius: 0 0 30px 0;
+      }
+      .square {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(70, 28, 28);
+        transform: rotate(45deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .inside-square {
+        width: 243px;
+        height: 321px;
+        background-color: #fff;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-1">
+      <div class="div1">
+        <div class="div11"></div>
+        <div class="div12"></div>
+        <div class="div13"></div>
+      </div>
+      <div class="div2">
+        <div class="div21"></div>
+        <div class="div22">
+          <div class="square">
+            <div class="inside-square"></div>
+          </div>
+        </div>
+        <div class="div23"></div>
+      </div>
+      <div class="div3">
+        <div class="div31"></div>
+        <div class="div32"></div>
+        <div class="div33"></div>
+      </div>
+    </div>
+  </body>
+</html>

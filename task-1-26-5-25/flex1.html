@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-1 flexbox</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-1 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+      }
+      .inside-outer1 {
+        width: 50%;
+        display: flex;
+      }
+      .inside-outer2 {
+        background-color: rgb(133, 168, 157);
+        width: 50%;
+
+        display: flex;
+      }
+      .inside-flex1 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+      }
+      .inside-flex11 {
+        height: 50%;
+        display: flex;
+      }
+      .inside-flex12 {
+        height: 50%;
+        background-color: rgb(230, 230, 28);
+      }
+      .inside-flex-111 {
+        width: 50%;
+        background-color: red;
+      }
+      .inside-flex-112 {
+        width: 50%;
+        background-color: rgb(105, 24, 24);
+      }
+      .inside-flex2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+      }
+      .inside-flex21 {
+        background-color: rgb(71, 58, 58);
+        height: 33.3%;
+      }
+      .inside-flex22 {
+        background-color: rgb(117, 87, 87);
+        height: 33.3%;
+      }
+      .inside-flex23 {
+        background-color: rgb(43, 11, 11);
+        height: 33.3%;
+      }
+      .inside-flex-1 {
+        background-color: rgb(255, 0, 0);
+
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inside-flex-in-1 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .inside-flex-in-01 {
+        background-color: rgb(243, 34, 34);
+        width: 50%;
+      }
+      .inside-flex-in-02 {
+        background-color: rgb(112, 19, 29);
+        width: 50%;
+      }
+      .inside-flex-in {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+      }
+      .inside-flex-in-yellow {
+        background-color: yellow;
+        height: 50%;
+      }
+      .inside-flex-in-red {
+        height: 50%;
+      }
+      .inside-flex-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+      }
+      .inside-flex-21 {
+        background-color: rgb(132, 79, 41);
+        height: 33.3%;
+      }
+      .inside-flex-22 {
+        background-color: rgb(178, 100, 100);
+
+        height: 33.33%;
+      }
+      .inside-flex-23 {
+        background-color: rgb(78, 15, 15);
+        height: 33.33%;
+      }
+      .inside-outer21 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .inside-outer211 {
+        background-color: rgb(226, 122, 122);
+        height: 40%;
+      }
+      .inside-outer212 {
+        background-color: rgb(154, 102, 111);
+        height: 40%;
+      }
+      .inside-outer213 {
+        background-color: rgb(150, 50, 67);
+        height: 20%;
+      }
+      .inside-outer22 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .inside-outer221 {
+        background-color: rgb(93, 43, 43);
+        height: 40%;
+      }
+      .inside-outer222 {
+        background-color: rgb(65, 24, 31);
+        height: 20%;
+      }
+      .inside-outer223 {
+        background-color: rgb(123, 11, 11);
+        height: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-1">
+      <div class="inside-outer1">
+        <div class="inside-flex1">
+          <div class="inside-flex11">
+            <div class="inside-flex-111"></div>
+            <div class="inside-flex-112"></div>
+          </div>
+          <div class="inside-flex12"></div>
+        </div>
+        <div class="inside-flex2">
+          <div class="inside-flex21"></div>
+          <div class="inside-flex22"></div>
+          <div class="inside-flex23"></div>
+        </div>
+      </div>
+      <div class="inside-outer2">
+        <div class="inside-outer21">
+          <div class="inside-outer211"></div>
+          <div class="inside-outer212"></div>
+          <div class="inside-outer213"></div>
+        </div>
+        <div class="inside-outer22">
+          <div class="inside-outer221"></div>
+          <div class="inside-outer222"></div>
+          <div class="inside-outer223"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
