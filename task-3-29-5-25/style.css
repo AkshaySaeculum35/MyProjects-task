@@ -77,6 +77,7 @@ body {
 
 .main-div .right-section {
   display: flex;
+  padding-bottom: 10px;
   margin-left: 25%;
   height: 100vh;
   width: 75%;
@@ -176,20 +177,19 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
-/* .right-section .main-section .visit-section .special {
+.right-section .main-section .visit-section .special {
   background-color: rgb(243, 60, 91);
   color: #fff;
 }
-.right-section .main-section .visit-section .visit-left .special h3 {
-  color: #fff;
+.right-section .main-section .visit-section .special .visit-left h3 {
+  color: #fff !important;
 }
 .right-section .main-section .visit-section .special .visit-right i {
-  color: #fff;
-} */
+  color: #fff !important;
+}
 .right-section .main-section .visit-section .visit .visit-left h1 {
   font-size: 30px;
-  columns: #1a1a1a;
+
   font-weight: 600;
 }
 .right-section .main-section .visit-section .visit .visit-left h3 {
@@ -203,7 +203,7 @@ body {
 
 .right-section .main-section .recent-activity {
   display: flex;
-  padding: 6px 20px;
+  padding: 4px 20px;
 
   gap: 30px;
 }
@@ -215,7 +215,7 @@ body {
 .right-section .main-section .recent-activity .recent .recent-head {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 16px 20px;
 }
 .right-section .main-section .recent-activity .recent .recent-head h2 {
   color: #1a1a1a;
@@ -245,18 +245,41 @@ i {
 
 .recent-activity .recent .recent-table table th {
   text-align: left;
-  padding: 10px;
+  padding: 10px 10px;
   vertical-align: middle;
   font-size: 15px;
   font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: #f9f9f9;
+  z-index: 1;
 }
-.recent-activity .recent .recent-table table tr {
-}
+
 .recent-activity .recent .recent-table table tr td {
   text-align: left;
   padding: 7px 13px;
   vertical-align: middle;
   font-size: 13px;
+}
+.recent-activity .recent .recent-table table tr .td-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.recent-activity .recent .recent-table table tr .td-flex div {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+}
+.recent-activity .recent .recent-table table tr .td-flex .td-1 {
+  background-color: rgb(70, 10, 125);
+}
+.recent-activity .recent .recent-table table tr .td-flex .td-2 {
+  background-color: rgb(154, 15, 52);
+}
+.recent-activity .recent .recent-table table tr .td-flex .td-3 {
+  background-color: rgb(224, 130, 16);
 }
 .right-section .main-section .recent-activity .customer {
   width: 40%;
@@ -270,7 +293,7 @@ i {
 .right-section .main-section .recent-activity .customer .customer-head {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 16px 20px;
 }
 .right-section .main-section .recent-activity .customer .customer-head h2 {
   color: #1a1a1a;
@@ -295,7 +318,7 @@ i {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0px 6px;
+  padding: 0px 15px;
 }
 .recent-activity .customer .customer-table .cust {
   display: flex;
@@ -309,7 +332,7 @@ i {
 }
 .recent-activity .customer .customer-table .social i {
   color: rgb(246, 165, 165);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .recent-activity .customer .customer-table .cust-profile {
@@ -331,9 +354,147 @@ i {
 }
 .recent-activity .customer .customer-table .cust-profile .cust-head h1 {
   color: #1a1a1a;
-  font-size: 15px;
+  font-size: 13px;
 }
 .recent-activity .customer .customer-table .cust-profile .cust-head h3 {
   color: #a07b7b;
-  font-size: 14px;
+  font-size: 12px;
+}
+@media only screen and (max-width: 1100px) {
+  .main-div .sidebar {
+    display: none !important;
+  }
+  .main-div .right-section {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .right-section .main-section .visit-section {
+    gap: 20px;
+
+    padding: 6px 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .right-section .main-section .visit-section .visit {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .right-section .main-section .visit-section {
+    padding: 6px 12px;
+  }
+  .right-section .main-section .visit-section .visit {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 755px) {
+  .right-section .navbar .dashboard h2 {
+    display: none;
+  }
+
+  .main-div .right-section .navbar .search input {
+    padding: 15px 0px 15px 43px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .main-div .right-section .navbar .search i {
+    color: #9d9898;
+    font-size: 18px;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+  }
+}
+
+@media only screen and (max-width: 703px) {
+  .main-div .right-section .navbar .profile img {
+    width: 40px;
+    height: 40px;
+  }
+  .main-div .right-section .navbar .profile .profile-in h2 {
+    font-size: 15px;
+  }
+  .main-div .right-section .navbar .profile .profile-in h3 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 586px) {
+  .right-section .main-section .visit-section {
+    padding: 3px 34px;
+  }
+}
+@media only screen and (max-width: 953px) {
+  .right-section .main-section .recent-activity {
+    display: flex;
+    padding: 6px 20px;
+    flex-direction: column;
+  }
+  .right-section .main-section .recent-activity .recent {
+    width: 100%;
+  }
+  .right-section .main-section .recent-activity .customer {
+    width: 100%;
+  }
+  .recent-activity .customer .customer-table .cust {
+    gap: 4px;
+
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .recent-activity .customer .customer-table .cust-profile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .recent-activity .customer .customer-table .cust-profile .cust-head h1 {
+    font-size: 12px;
+  }
+
+  .recent-activity .customer .customer-table .cust-profile .cust-head h3 {
+    color: #1a1a1a;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .main-div .right-section .navbar .search {
+    display: none;
+  }
+}
+@media only screen and (max-width: 933px) {
+  .recent-activity .recent .recent-table {
+    aspect-ratio: 0;
+  }
+  .recent-activity .customer .customer-table {
+    aspect-ratio: 0;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .right-section .main-section .recent-activity .recent .recent-head h2 {
+    font-size: 15px;
+  }
+
+  .right-section .main-section .recent-activity .recent .recent-head div p,
+  i {
+    font-size: 10px;
+  }
+  .right-section .main-section .recent-activity .customer .customer-head h2 {
+    color: #1a1a1a;
+    font-size: 15px;
+  }
+
+  .right-section .main-section .recent-activity .customer .customer-head div p,
+  i {
+    font-size: 10px;
+  }
+  .recent-activity .recent .recent-table table th {
+    font-size: 13px;
+  }
+  .recent-activity .recent .recent-table table td {
+    font-size: 10px;
+  }
 }
