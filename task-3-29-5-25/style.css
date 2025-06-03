@@ -87,7 +87,7 @@ body {
   gap: 10px;
 }
 .main-div .right-section .navbar {
-  height: 15%;
+  height: 10%;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -95,6 +95,9 @@ body {
   padding: 10px 25px 10px 26px;
 
   box-shadow: 0px 5px 12px -3px rgb(235, 221, 221);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .main-div .right-section .navbar .dashboard {
   display: flex;
@@ -161,6 +164,7 @@ body {
 .main-section {
   /* height: 85%; */
   background-color: rgb(228, 224, 224);
+  padding-top: 75px;
 }
 
 .right-section .main-section .visit-section {
@@ -205,12 +209,13 @@ body {
   display: flex;
   padding: 4px 20px;
 
-  gap: 30px;
+  gap: 20px;
 }
 .right-section .main-section .recent-activity .recent {
   width: 64%;
   border-radius: 19px;
   background-color: #fff;
+  padding-bottom: 20px;
 }
 .right-section .main-section .recent-activity .recent .recent-head {
   display: flex;
@@ -284,6 +289,7 @@ i {
 .right-section .main-section .recent-activity .customer {
   width: 40%;
   border-radius: 19px;
+  padding-bottom: 20px;
 }
 
 .right-section .main-section .recent-activity .customer {
