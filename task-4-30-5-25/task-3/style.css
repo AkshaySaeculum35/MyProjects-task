@@ -51,11 +51,12 @@ p {
 .main-div .div-cont {
   width: 70%;
   background-color: #fff;
-  height: 85vh;
+  /* height: 80vh; */
+  padding-bottom: 20px;
   border-radius: 40px;
   position: absolute;
   right: 144px;
-  top: 56px;
+  top: 74px;
   box-shadow: 2px 2px 15px 2px rgb(212, 210, 210);
 }
 .main-div .div-cont .cont-up {
@@ -128,7 +129,7 @@ p {
   gap: 10px;
 }
 .profile .intro button {
-  padding: 16px 35px;
+  padding: 12px 30px;
   border-radius: 28px;
   border: none;
   outline: none;
@@ -158,15 +159,16 @@ p {
   gap: 15px;
 }
 .profile .intro .profile-show .prof-con .prof-head h1 {
-  font-size: 40px;
+  font-size: 30px;
+
   color: #1a1a1a;
 }
 .profile .intro .profile-show .prof-con .prof-head h3 {
-  font-size: 22px;
+  font-size: 16px;
   color: rgb(165 162 162);
 }
 .profile .intro .profile-show .prof-con .prof-head p {
-  font-size: 22px;
+  font-size: 16px;
   color: rgb(165 162 162);
 }
 .profile .intro .role {
@@ -247,12 +249,12 @@ p {
   background-color: rgb(234, 239, 241);
 }
 .profile .work .work-in .work-cont h2 {
-  font-size: 20px;
+  font-size: 16px;
   color: #1a1a1a;
   font-weight: bold;
 }
 .profile .work .work-in .work-cont p {
-  font-size: 14px;
+  font-size: 13px;
   color: #747070;
 }
 .profile .work .work-cont {
@@ -268,4 +270,160 @@ p {
 .profile .work .work-here i {
   font-size: 40px;
   color: rgb(68, 161, 201);
+}
+@media (max-width: 1535px) {
+  .main-div .div-cont {
+    right: 144px;
+    top: 50px;
+  }
+}
+
+@media (max-width: 1480px) {
+  .main-div .div-cont {
+    right: 144px;
+    top: 45px;
+  }
+}
+@media (max-width: 1450px) {
+  .main-div .div-cont {
+    right: 144px;
+    top: 40px;
+  }
+}
+@media (max-width: 1386px) {
+  .main-div .fixed-div {
+    margin-left: 127px;
+  }
+}
+@media (max-width: 1260px) {
+  .profile .intro .role .skills ul {
+    gap: 8px;
+  }
+}
+@media (max-width: 1197px) {
+  .profile .intro button {
+    padding: 10px 21px;
+    font-size: 10px;
+  }
+  .profile .intro .role .skills ul li p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1168px) {
+  .profile .intro .role .skills ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .main-div .fixed-div {
+    margin-left: 73px;
+  }
+  .profile .work .work-in .work-cont h2 {
+    font-size: 14px;
+  }
+  .profile .work .work-in .work-cont p {
+    font-size: 10px;
+  }
+  .profile .work .work-here i {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1073px) {
+  .profile .work .work-in {
+    gap: 10px;
+  }
+  .profile .work .work-in {
+    padding: 20px 21px;
+  }
+}
+@media (max-width: 1030px) {
+  .main-div .div-cont {
+    padding-bottom: 10px;
+  }
+  .profile .intro .profile-show .prof-con .prof-head {
+    gap: 0;
+  }
+}
+@media (max-width: 1002px) {
+  .profile .intro .profile-show .prof-con .prof-head {
+    gap: 0;
+  }
+}
+@media (max-width: 907px) {
+  .main-div .fixed-div {
+    display: none;
+  }
+  .main-div .div-cont {
+    width: 100%;
+    right: 0;
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 759px) {
+  .profile .intro .profile-show .prof-con .prof-head h1 {
+    font-size: 23px;
+  }
+  .profile .intro .profile-show .prof-con .prof-head h3 {
+    font-size: 13px;
+  }
+  .profile .intro .role .role-1 h2 {
+    font-size: 16px;
+  }
+  .profile .intro .role .role-1 h2 i {
+    font-size: 18px;
+  }
+  .profile .intro .role .role-1 h1 {
+    font-size: 15px;
+
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .profile .intro .role .skills h2 {
+    font-size: 16px;
+  }
+  .profile .intro .role .skills h2 i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 629px) {
+  .profile .work {
+    flex-wrap: wrap;
+  }
+  .profile .work .work-in {
+    width: 45%;
+  }
+}
+@media (max-width: 506px) {
+  .profile .work .work-in {
+    width: 100%;
+  }
+}
+@media (max-width: 497px) {
+  .profile .intro {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .profile .intro .role .role-1 {
+    align-self: start;
+  }
+  .profile .intro .role {
+    padding-top: 20px;
+  }
+  .profile .intro .role .role-1 h2 {
+    justify-content: flex-start;
+  }
+  .profile .intro .role .skills h2 {
+    justify-content: flex-start;
+  }
+  .profile .intro .role .skills ul {
+    justify-content: flex-start;
+  }
+  .profile .intro .role {
+    padding-top: 20px;
+    padding-left: 29px;
+  }
+  .profile .intro .role .skills {
+    padding-top: 14px;
+  }
 }
