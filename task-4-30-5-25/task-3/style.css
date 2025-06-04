@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+h2 {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+}
+h3 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+p {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+.btn {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.main-div {
+  display: flex;
+  padding: 16px 20px;
+  position: relative;
+}
+.main-div .fixed-div {
+  width: 25%;
+
+  background-color: rgb(58 29 249);
+  height: 95vh;
+  border-radius: 40px;
+  margin-left: 176px;
+}
+.main-div .div-cont {
+  width: 70%;
+  background-color: #fff;
+  height: 85vh;
+  border-radius: 40px;
+  position: absolute;
+  right: 144px;
+  top: 56px;
+  box-shadow: 2px 2px 15px 2px rgb(212, 210, 210);
+}
+.main-div .div-cont .cont-up {
+  background-image: linear-gradient(red, yellow, green);
+  height: 20vh;
+  border-radius: 40px 40px 0px 0px;
+}
+.main-div .div-cont .cont-up div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin: 20px;
+}
+.main-div .div-cont .cont-up div i {
+  color: #a49797;
+
+  font-size: 22px;
+  float: right;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.profile .intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: #fff;
+}
+.profile .intro .profile-show .prof {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -61px;
+  left: 42px;
+}
+
+.profile .intro .profile-show img {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+}
+.profile .intro .profile-head h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.profile .intro .profile-head h3 {
+  font-size: 18px;
+
+  color: rgb(48, 41, 41);
+}
+.profile .intro .profile-head p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(182, 182, 182);
+}
+.profile .intro .btns {
+  display: flex;
+  gap: 10px;
+}
+.profile .intro button {
+  padding: 16px 35px;
+  border-radius: 28px;
+  border: none;
+  outline: none;
+}
+
+.profile .intro .edit {
+  color: #fff;
+  background-color: #1a1a1a;
+  font-weight: bold;
+}
+.profile .intro .setting {
+  background-color: #fff;
+  font-weight: bold;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+.profile .intro .profile-show .prof-con {
+  margin-top: 84px;
+  padding: 0px 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile .intro .profile-show .prof-con .prof-head {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.profile .intro .profile-show .prof-con .prof-head h1 {
+  font-size: 40px;
+  color: #1a1a1a;
+}
+.profile .intro .profile-show .prof-con .prof-head h3 {
+  font-size: 22px;
+  color: rgb(165 162 162);
+}
+.profile .intro .profile-show .prof-con .prof-head p {
+  font-size: 22px;
+  color: rgb(165 162 162);
+}
+.profile .intro .role {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile .intro .role .role-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 216px;
+  align-self: end;
+}
+.profile .intro .role .role-1 h2 {
+  font-size: 20px;
+  color: rgb(165 162 162);
+  /* text-align: end; */
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.profile .intro .role .role-1 h2 i {
+  font-size: 22px;
+  color: rgb(165 162 162);
+}
+.profile .intro .role .role-1 h1 {
+  font-size: 20px;
+  color: rgb(165 162 162);
+  border-radius: 20px;
+  padding: 8px 20px;
+  text-align: end;
+  background-color: rgb(243, 240, 240);
+}
+.profile .intro .role .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile .intro .role .skills h2 {
+  font-size: 20px;
+  color: rgb(165 162 162);
+  text-align: end;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.profile .intro .role .skills h2 i {
+  font-size: 22px;
+  color: rgb(165 162 162);
+}
+.profile .intro .role .skills ul {
+  display: flex;
+  gap: 15px;
+}
+.profile .intro .role .skills ul li {
+  list-style: none;
+  background-color: #efdddd;
+
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+.profile .intro .role .skills ul li p {
+  padding: 2px 18px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.profile .work {
+  display: flex;
+  gap: 20px;
+  padding: 10px 30px;
+}
+.profile .work .work-in {
+  display: flex;
+  padding: 27px 30px;
+  border-radius: 3px;
+  justify-content: space-between;
+  background-color: rgb(234, 239, 241);
+}
+.profile .work .work-in .work-cont h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.profile .work .work-in .work-cont p {
+  font-size: 14px;
+  color: #747070;
+}
+.profile .work .work-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile .work .work-here {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .work .work-here i {
+  font-size: 40px;
+  color: rgb(68, 161, 201);
+}
