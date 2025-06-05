@@ -35,7 +35,7 @@ header {
   background-repeat: no-repeat;
   /* filter: opacity(60%); */
   background-size: cover;
-  background-position: bottom bottom;
+  background-position: center;
   min-height: 100vh;
   padding-top: 80px;
   position: relative;
@@ -264,6 +264,7 @@ section {
   font-size: 14px;
   font-weight: bold;
   padding-top: 30px;
+  padding-right: 10px;
 }
 .studio .studio1 .studio1-con .con-para2 p {
   color: #858383;
@@ -490,13 +491,18 @@ section {
   .contact .add-form .address .add4 {
     width: 60%;
   }
+  section {
+    padding: 0;
+  }
 }
 @media (max-width: 1179px) {
   .contact .add-form {
     flex-direction: column;
     align-items: center;
   }
-
+  .nav-div .nav-content .nav-para {
+    width: 60%;
+  }
   .contact .add-form .address {
     width: 100%;
   }
@@ -586,6 +592,9 @@ section {
   /* .nav-div .nav-content .left-days {
     width: 50%;
   } */
+  /* .nav-div .nav-content {
+    height: 58vh;
+  } */
 }
 @media (max-width: 592px) {
   .studio .studio1 .studio-img img {
@@ -593,10 +602,15 @@ section {
     height: 296px;
   }
 }
-@media (max-width: 445px) {
+@media (max-width: 455px) {
   .nav-div .nav-content .subscribe {
     padding: 10px 5px;
   }
+}
+@media (max-width: 445px) {
+  /* .nav-div .nav-content .subscribe {
+    padding: 10px 5px;
+  } */
 
   .studio .studio1 .studio-img img {
     width: 72vw;
@@ -668,5 +682,13 @@ section {
   }
   .contact .add-form .address .add4 button {
     font-size: 10px;
+  }
+}
+@media (max-width: 908px) {
+  header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
   }
 }
