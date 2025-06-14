@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+        rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+  />
+    <title>about us page</title>
+    </head>
+  <body class="font-serif bg-gray-100">
+    <!-- navbar content -->
+
+    <header
+    class="top-0 dark:bg-gray-800 mx-auto bg-gray-100 fixed w-full z-40"
+  >
+    <div
+      class="flex md:justify-around justify-between items-center dark:bg-gray-800 bg-gray-100 md:px-[.5rem] px-[2rem]"
+    >
+      <!-- <div
+        class="font-bold text-gray-800 dark:text-gray-200 text-2xl md:text-3xl md:hidden block order-2"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
+      <div class="md:hidden order-2">
+        <button id="menu-btn" class="text-gray-700 dark:text-white focus:outline-none">
+          <!-- Hamburger icon -->
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex items-center">
+        <img
+          class="md:w-[120px] md:h-[120px] w-[80px] h-[80px]"
+          src="https://cdn.freebiesupply.com/logos/large/2x/just-sport-shoes-logo-black-and-white.png"
+          alt=""
+        />
+        <div
+          class="flex flex-col justify-center items-start border-l-2 dark:border-white"
+        >
+          <p
+            class="font-semibold md:text-xl text-sm text-gray-600 dark:text-gray-300 ml-2"
+          >
+            Lets
+          </p>
+          <p
+            class="font-semibold md:text-xl text-sm text-gray-600 dark:text-gray-300 ml-2"
+          >
+            Walk
+          </p>
+        </div>
+      </div>
+      <div
+        class="items-center justify-between hidden w-full md:flex md:w-auto"  id="nav-links"
+      >
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-100 lg:space-x-16 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 items-center md:dark:bg-gray-800 dark:border-gray-700"
+        >
+          <li>
+            <a
+              href="./ecommerce.html"
+              class="nav-link active block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-800 md:p-0 md:dark:text-white"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="nav-link active block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-800 md:p-0 md:dark:text-white"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="nav-link active block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-800 md:p-0 md:dark:text-white"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class=" block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-800 md:p-0 md:dark:text-white"
+              >Feedback</a
+            >
+          </li>
+          <li class="relative">
+            <a
+            id="dropdownButton"
+            onclick="toggleDropdown(event)"
+              href="#"
+              class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-gray-800 md:p-0 md:dark:text-white "
+              >Filter Shoes
+              <i class="fa-solid fa-chevron-down ml-2 font-semibold"></i
+            ></a>
+            <div  id="dropdownMenu"
+             
+              class="absolute left-0 mt-2 z-10 hidden  bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+             
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Sports</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Saddle</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Loafers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Formals</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex items-center">
+              <label
+                for="checkbox"
+                class="inline-block relative w-[60px] theme-switch"
+              >
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                  class="hidden peer"
+                />
+
+                <div
+                  class="w-14 h-8 bg-gray-300 peer-checked:bg-gray-300 rounded-full transition-colors duration-500"
+                ></div>
+
+                <div
+                  class="absolute left-1 top-1 w-6 h-6  rounded-full shadow-md transform transition-transform duration-500 peer-checked:translate-x-6 text-gray-500 flex items-center icon "
+                >
+                <span class="material-symbols-outlined">
+                  light_mode
+                  </span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="hidden xl:flex flex-col">
+        <h3 class="font-semibold text-gray-500 dark:text-gray-200">
+          Contact: L-V: 08:30-17:30
+        </h3>
+        <h3 class="font-semibold text-gray-500 dark:text-gray-200 flex items-center gap-1 ">
+            <i class="fa-solid fa-phone-volume font-bold text-xl"></i>0374023333 / <i class="fa-brands fa-whatsapp font-bold text-xl"></i>0733909999
+          </h3>
+      </div>
+    </div>
+    <div id="mobile-menu"
+    class="items-center justify-between hidden w-full md:hidden md:w-auto"
+  >
+    <ul
+      class="flex flex-col p-4 md:p-0 mt-4 font-medium   rounded-lg bg-gray-100 lg:space-x-16 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 items-center dark:bg-gray-800 "
+    >
+      <li>
+        <a
+          href="./ecommerce.html"
+          class="block py-2 px-3  rounded-sm md:bg-transparent  text-gray-800 md:p-0 dark:text-white"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="./about.html"
+          class="block py-2 px-3  rounded-sm md:bg-transparent text-gray-800 md:p-0 dark:text-white"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="./contact.html"
+          class="block py-2 px-3  rounded-sm md:bg-transparent text-gray-800 md:p-0 dark:text-white"
+          >Contact Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="block py-2 px-3  rounded-sm md:bg-transparent text-gray-800 md:p-0 dark:text-white"
+          >Feedback</a
+        >
+      </li>
+      <li>
+        <a
+          id="dropdownHoverButton"
+          data-dropdown-toggle="dropdownHover"
+          data-dropdown-trigger="hover"
+          href="#"
+          class="block py-2 px-3   rounded-sm md:bg-transparent text-gray-800 md:p-0 dark:text-white peer"
+          >Filter Shoes
+          <i class="fa-solid fa-chevron-down ml-2 font-semibold"></i
+        ></a>
+        <div
+          id="dropdownHover"
+          class="z-40 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700"
+        >
+          <ul
+            class="py-2 text-sm text-gray-700 dark:text-gray-200"
+            aria-labelledby="dropdownHoverButton"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Sports</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Saddle</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Loafers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                >Formals</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <div class="flex items-center">
+          <label
+            for="checkbox"
+            class="inline-block relative w-[60px] theme-switch"
+          >
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="hidden peer"
+            />
+
+            <div
+              class="w-14 h-8 bg-gray-300 peer-checked:bg-gray-300 rounded-full transition-colors duration-500"
+            ></div>
+
+            <div
+              class="absolute left-1 top-1 w-6 h-6  rounded-full shadow-md transform transition-transform duration-500 peer-checked:translate-x-6 text-gray-500 flex items-center icon "
+            >
+            <span class="material-symbols-outlined">
+              light_mode
+              </span>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+    </header> 
+
+    <!-- about-section -->
+    <section
+      class="bg-white dark:bg-gray-800 w-full pb-7 md:mt-[7.5rem] mt-[5rem]"
+    >
+      <div
+        class="flex flex-col px-5 max-w-[82rem] mx-auto pt-[5rem] items-center w-full"
+      >
+        <div>
+          <h1
+            class="text-[#141414] text-3xl lg:text-5xl font-bold text-center md:text-start dark:text-gray-300"
+          >
+            Leave it all to us!
+          </h1>
+        </div>
+        <div class="flex justify-around w-full mt-12 flex-wrap md:p-0 p-4">
+          <div
+            class="flex flex-col items-center justify-center w-full max-w-[17rem] md:p-0 py-4"
+          >
+            <img
+              src="https://devinlocuiremasina.blob.core.windows.net/imstorage/en-US%2Cen%3Bq%3D0.9%2Cfr%3Bq%3D0.8%2Cpt%3Bq%3D0.7/home/a7e00ac4-6cf5-459f-8422-05c5c6a6ea1f-free.svg"
+              alt=""
+            />
+            <h2
+              class="py-4 text-gray-800 dark:text-gray-300 font-semibold text-xl"
+            >
+              FREE
+            </h2>
+            <p class="text-center text-gray-800 dark:text-gray-300">
+              All costs are covered by the at-fault driver's insurance.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center w-full max-w-[17rem] md:p-0 py-4"
+          >
+            <img
+              src="https://devinlocuiremasina.blob.core.windows.net/imstorage/en-US%2Cen%3Bq%3D0.9%2Cfr%3Bq%3D0.8%2Cpt%3Bq%3D0.7/home/5d49025c-97f0-43fa-b46d-7331f217fcc7-unlimited.svg"
+              alt=""
+            />
+            <h2
+              class="py-4 text-gray-800 dark:text-gray-300 font-semibold text-xl"
+            >
+              NO LIMITS
+            </h2>
+            <p class="text-center text-gray-800 dark:text-gray-300">
+              You can use your replacement car anywhere in Romania without any
+              mileage restrictions.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center w-full max-w-[17rem] md:p-0 py-4"
+          >
+            <img
+              src="https://devinlocuiremasina.blob.core.windows.net/imstorage/en-US%2Cen%3Bq%3D0.9/home/7119e95b-1265-44bb-8896-6109cb04b1f8-access1.svg"
+              alt=""
+            />
+            <h2
+              class="py-4 text-gray-800 font-semibold text-xl dark:text-gray-300"
+            >
+              FAST
+            </h2>
+            <p class="text-center text-gray-800 dark:text-gray-300">
+              No time wasted - fast car pick-up and dedicated support, 24/7.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col-reverse lg:flex-row mt-[8rem]">
+          <div class="w-full max-w-[37rem] space-x-20">
+            <h1
+              class="text-[#141414] text-2xl lg:text-4xl xl:text-5xl font-extrabold pb-5 md:pb-0 z-20 dark:text-gray-300 mt-3 md:mt-0"
+            >
+              Replacement shoes in 3 easy steps
+            </h1>
+
+            <div class="py-6 w-full pr-10">
+              <h2
+                class="text-xl font-semibold text-gray-800 dark:text-gray-300"
+              >
+                1. Apply online or contact us directly
+              </h2>
+              <p class="text-sm font-light text-gray-800 dark:text-gray-300">
+                You can call us at 0374 023 333 or fill in the contact form
+                above, and one of our consultants will get back to you as soon
+                as possible.
+              </p>
+            </div>
+            <div class="py-6 w-full pr-10">
+              <h2
+                class="text-xl font-semibold text-gray-800 dark:text-gray-300"
+              >
+                2. We process and validate your application
+              </h2>
+              <p class="text-sm font-light text-gray-800 dark:text-gray-300">
+                Processing and validation are quick, usually within minutes for
+                the simplest cases.
+              </p>
+            </div>
+            <div class="py-6 w-full pr-10">
+              <h2
+                class="text-xl font-semibold text-gray-800 dark:text-gray-300"
+              >
+                3. Pick up the shoes
+              </h2>
+              <p class="text-sm font-light text-gray-800 dark:text-gray-300">
+                Once your request is validated, go to the chosen location with
+                the required documents and pick up the replacement car free of
+                charge.
+              </p>
+            </div>
+            <div class="py-6 w-full pr-10">
+              <p class="text-sm font-light text-gray-800 dark:text-gray-300">
+                You benefit from a replacement car for the duration of the
+                repairs, free of charge, through a fast and transparent process.
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-full md:h-[400px] w-full lg:w-[541px] lg:h-[549px] flex justify-center items-center z-10"
+          >
+            <img
+              class="size-full shrink-0 opacity-100 dark:opacity-50"
+              loading="lazy"
+              src="https://devinlocuiremasina.blob.core.windows.net/imstorage/en-US%2Cen%3Bq%3D0.9%2Cfr%3Bq%3D0.8%2Cpt%3Bq%3D0.7/home/cc53037a-1a85-4be6-9a23-e294f8fcddf2-AdobeStock.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider -->
+    <section class="bg-white dark:bg-gray-800 w-full pb-7">
+      <div
+        class="flex flex-col px-5 max-w-[82rem] mx-auto items-center w-full pt-[5rem]"
+      >
+        <div class="flex flex-col items-center w-full">
+          <h1
+            class="text-[#141414] text-3xl lg:text-5xl font-bold text-center md:text-start dark:text-gray-300"
+          >
+            Our Shoes
+          </h1>
+          <h3 class="font-light text-xl text-gray-600 dark:text-gray-300">
+            Fleet renewed annually with the latest and safest items
+          </h3>
+        </div>
+     
+        <div class="swiper mySwiper mt-4 w-full relative">
+          <div
+          class="swiper-wrapper  w-full "
+        >
+          <div class="swiper-slide flex flex-col items-center py-5 text-center ">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://png.pngtree.com/png-vector/20231230/ourmid/pngtree-dropshipping-men-hole-sole-jogging-shoes-png-image_11389148.png"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Campus
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide flex flex-col items-center py-5 text-center ">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://file.aiquickdraw.com/imgcompressed/img/compressed_fbaa1593d04e060e9210fe439e2d2bfe.webp"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Reebook
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide flex flex-col items-center py-5 text-center">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://static.vecteezy.com/system/resources/thumbnails/046/323/598/small/pair-of-colorful-sports-shoes-for-active-lifestyle-png.png"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Puma
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide flex flex-col items-center py-5 text-center">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://file.aiquickdraw.com/imgcompressed/img/compressed_7b48ed22e05748e21bbff2cd0490420b.webp"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Addidas
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide flex flex-col items-center py-5 text-center">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://static.vecteezy.com/system/resources/thumbnails/046/323/598/small/pair-of-colorful-sports-shoes-for-active-lifestyle-png.png"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Addidas
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide flex flex-col items-center py-5 text-center">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://png.pngtree.com/png-vector/20250601/ourmid/pngtree-running-shoes-pair-on-white-background-png-image_16441482.png"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Addidas
+              </h3>
+            </div>
+          </div>
+          <div class="swiper-slide flex flex-col items-center py-5 text-center">
+            <img
+              class="md:w-[300px] md:h-[200px] max-w-[20rem] mx-auto md:m-0"
+              src="https://static.vecteezy.com/system/resources/thumbnails/057/459/962/small_2x/dramatic-traditional-running-shoes-red-and-black-isolated-genuine-png.png"
+              alt=""
+            />
+            <div>
+              <h3
+                class="font-semibold text-gray-800 dark:text-gray-300 text-xl mt-4"
+              >
+                Addidas
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+       
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-white dark:bg-gray-800 w-full pb-7 p-3">
+      <div
+        class="flex flex-col max-w-[82rem] mx-auto items-center w-full mt-8 space-y-4 p-6 md:p-5"
+      >
+        <div
+          class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+          <div class="space-y-[1rem]">
+            <div class="flex items-center">
+              <img
+                class="md:w-[100px] md:h-[100px] w-[60px] h-[60px]"
+                src="https://cdn.freebiesupply.com/logos/large/2x/just-sport-shoes-logo-black-and-white.png"
+                alt=""
+              />
+              <div
+                class="flex flex-col justify-center items-start border-l-2 dark:border-white"
+              >
+                <p
+                  class="font-semibold md:text-xl text-sm text-gray-600 dark:text-gray-300 ml-2"
+                >
+                  Lets
+                </p>
+                <p
+                  class="font-semibold md:text-xl text-sm text-gray-600 dark:text-gray-300 ml-2"
+                >
+                  Walk
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-blue-700 dark:text-blue-600">
+                E-MAIL
+              </h3>
+              <p class="font-light text-gray-800 dark:text-gray-300">
+                inlocuiremasina@klasswagen.com
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-blue-700 dark:text-blue-600">
+                PHONE NUMBER
+              </h3>
+              <p class="font-light text-gray-800 dark:text-gray-300">
+                0374023333
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-blue-700 dark:text-blue-600">
+                WHATSAPP
+              </h3>
+              <p class="font-light text-gray-800 dark:text-gray-300">
+                0733909999
+              </p>
+            </div>
+          </div>
+          <div class="space-y-[1rem]">
+            <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-300">
+              Useful
+            </h3>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Terms and Conditions</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Privacy Policy</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Rent a Car</a>
+            </p>
+          </div>
+          <div class="space-y-[1rem]">
+            <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-300">
+              Romania
+            </h3>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Bacau</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Bucharest</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Timisoara</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">lasi</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Cluj-Napoca</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Craiova</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Siblu</a>
+            </p>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              <a href="#">Suceava</a>
+            </p>
+          </div>
+          <div class="space-y-[1rem]">
+            <h3 class="font-semibold text-xl text-gray-800 dark:text-gray-300">
+              Comercial data
+            </h3>
+            <p
+              class="font-light text-[1.1rem] text-gray-800 dark:text-gray-300"
+            >
+              Klass Wagen SRL Timisoara, str. B-dul 16 Decembrie 1989, no. 35,
+              county Timis J35/351/2005 RO 17197919.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col-reverse space-y-4 md:flex-row md:justify-between justify-center w-full gap-[2rem] md:gap-0 md:mt-[6rem] mt-[2rem] md:p-5"
+        >
+          <div class="flex w-full max-w-[100%] h-[100%] space-x-[2rem]">
+            <div
+              class="max-w-[2.5rem] min-h-[2.5rem] w-full cursor-pointer rounded-full bg-gray-200 flex justify-center items-center"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div
+              class="max-w-[2.5rem] min-h-[2.5rem] w-full cursor-pointer rounded-full bg-gray-200 flex justify-center items-center"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div
+              class="max-w-[2.5rem] min-h-[2.5rem] w-full cursor-pointer rounded-full bg-gray-200 flex justify-center items-center"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div
+              class="max-w-[2.5rem] min-h-[2.5rem] w-full cursor-pointer rounded-full bg-gray-200 flex justify-center items-center"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div
+            class="max-w-[27rem] p-[2rem] dark:bg-gray-700  bg-gray-800 rounded-3xl flex flex-col space-y-8"
+          >
+            <p
+              class="font-light text-xl text-gray-300 dark:text-gray-100 w-full"
+            >
+              I want to receive offers and news from replacementmasina.com Klass
+              Wagen.
+            </p>
+            <button
+              class="bg-blue-500 w-full mx-auto px-[20px] py-[12px] flex justify-center rounded-4xl text-white font-semibold text-xl hover:bg-blue-400 transition duration-[.5s] ease-in-out"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between lg:flex-row flex-col lg:items-end items-center w-full mt-[6rem] space-y-3"
+        >
+          <div class="flex lg:space-x-10 space-x-6 lg:order-1 order-1">
+            <p class="font-light text-gray-800 dark:text-gray-300 text-sm">
+              Privacy notice & Legal notice
+            </p>
+            <p class="font-light text-gray-800 dark:text-gray-300 text-sm">
+              T&C
+            </p>
+          </div>
+          <div
+            class="flex flex-col md:flex-row space-y-3 lg:space-y-0 lg:space-x-10 space-x-6 lg:order-2 order-3 mt-3 lg:mt-0"
+          >
+            <img
+              class="w-[10rem] h-[3rem]"
+              src="https://devinlocuiremasina.blob.core.windows.net/imstorage/en-US%2Cen%3Bq%3D0.9/footer/cd583dad-6647-4a10-abbf-509719b3fded-anpc.png"
+              alt=""
+            />
+            <img
+              class="w-[10rem] h-[3rem]"
+              src="https://devinlocuiremasina.blob.core.windows.net/imstorage/en-US%2Cen%3Bq%3D0.9/footer/eabf0943-f743-4013-bef8-8507fa493fe0-solutionarea.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:order-3 order-2">
+            <p class="font-light text-gray-800 dark:text-gray-300 text-sm">
+              2016-2025 © lets walk. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+   
+
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
