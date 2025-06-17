@@ -21,9 +21,8 @@
 
     .scrollbar-hide {
       -ms-overflow-style: none;
-      /* IE and Edge */
       scrollbar-width: none;
-      /* Firefox */
+     
     }
   </style>
 </head>
@@ -238,7 +237,7 @@
         </div>
 
         <div id="modal"
-          class="fixed inset-0 bg-transparent bg-opacity-50 hidden items-center justify-center z-50  w-full sm:mx-auto sm:p-[2rem] ">
+          class="fixed inset-0 bg-transparent backdrop-blur-sm bg-opacity-60 hidden items-center justify-center z-50  w-full sm:mx-auto sm:p-[2rem] ">
 
           <div
             class="bg-white dark:bg-gray-600 w-full space-y-20 sm:max-w-[80rem] p-[4rem]  shadow relative overflow-y-scroll scrollbar-hide max-h-[60rem] h-full rounded-[3rem] ">
@@ -461,9 +460,9 @@
           </div>
         </div>
       </div>
-      <div class="p-8 relative">
+      <div class="p-8 relative opa">
         <img
-          class="lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[400px] h-[300px] opacity-100 dark:opacity-50 relative md:max-w-[700px] mx-auto animate-bounce duration-300"
+          class="lg:w-[500px] lg:h-[400px] md:w-[400px] md:h-[300px] w-[400px] h-[300px] opacity-100 dark:opacity-50 relative md:max-w-[700px] mx-auto "
           src="https://static.vecteezy.com/system/resources/thumbnails/049/668/138/small_2x/nike-air-max-exceed-running-shoes-orange-and-blue-comfortable-and-stylish-with-a-transparent-background-png.png"
           alt="" />
         <!-- <div
@@ -682,7 +681,7 @@
 
   <section class="bg-white dark:bg-gray-800 w-full pb-7 p-3">
     <div
-      class="md:bg-blue-200 bg-white flex dark:bg-gray-400 rounded-[40px] flex-col p-[30px] max-w-[82rem] mx-auto items-center w-full mt-10">
+      class="md:bg-blue-200 bg-white flex dark:bg-gray-400 rounded-[40px] flex-col sm:p-[30px] max-w-[82rem] mx-auto items-center w-full mt-10">
       <div class="bg-white block shadow-2xl dark:bg-gray-800 rounded-[60px] md:my-12 md:mx-6 p-14 m-0">
         <div class="flex flex-col space-y-2 w-full max-w-[70rem]">
           <h1 class="text-2xl lg:text-3xl xl:text-4xl text-[#141414] font-extrabold dark:text-gray-300">
@@ -775,10 +774,10 @@
           <h3 class="font-semibold text-2xl text-gray-800 dark:text-gray-300">
             Contact Us
           </h3>
-          <button class="bg-black font-bold text-gray-100 underline px-[25px] py-[11px] rounded-3xl w-full">
+          <button class="bg-black font-bold text-gray-100 underline px-[25px] py-[11px] rounded-3xl w-full text-sm ">
             @letswalk@gmail.com
           </button>
-          <button class="bg-black font-bold text-gray-100 underline px-[25px] py-[11px] rounded-3xl">
+          <button class="bg-black font-bold text-gray-100 underline px-[25px] py-[11px] rounded-3xl text-sm ">
             <i class="fa-solid fa-phone-volume"></i> +21 422 454 22
           </button>
         </div>

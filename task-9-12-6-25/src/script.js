@@ -135,7 +135,7 @@ function openModal() {
   modal.classList.remove("hidden");
   modal.classList.add("flex");
   document.body.classList.add("overflow-hidden");
-  // tag.style.backgroundColor = "rgba(0, 0, 255, 0.6)";
+  document.body.classList.add("");
 }
 function closeModal() {
   modal.classList.remove("flex");
