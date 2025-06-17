@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multi Slider</title>
+    <script defer src="script.js"></script>
+    <style>
+      .slider {
+        display: flex;
+        gap: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .slide {
+        flex-shrink: 0;
+        width: 200px;
+        height: 150px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      .slider-wrapper {
+        overflow: hidden;
+        width: 100%;
+        max-width: 860px;
+        margin: 2rem auto;
+        border: 2px solid #333;
+        position: relative;
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Slider 1 -->
+    <div class="slider-wrapper">
+      <div class="slider">
+        <div class="slide">1</div>
+        <div class="slide">2</div>
+        <div class="slide">3</div>
+        <div class="slide">4</div>
+        <div class="slide">5</div>
+      </div>
+      <div class="controls">
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <!-- Slider 2 -->
+    <div class="slider-wrapper">
+      <div class="slider">
+        <div class="slide">A</div>
+        <div class="slide">B</div>
+        <div class="slide">C</div>
+        <div class="slide">D</div>
+        <div class="slide">E</div>
+      </div>
+      <div class="controls">
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sliderWrappers = document.querySelectorAll(".slider-wrapper");
+
+        sliderWrappers.forEach((wrapper) => {
+          const slider = wrapper.querySelector(".slider");
+          const slides = slider.children;
+          const nextBtn = wrapper.querySelector(".next");
+          const prevBtn = wrapper.querySelector(".prev");
+
+          let index = 0;
+
+          function getSlidesPerView() {
+            const width = window.innerWidth;
+            if (width >= 1024) return 4;
+            if (width >= 768) return 3;
+            if (width >= 640) return 2;
+            return 1;
+          }
+
+          function updateSlider() {
+            const perView = getSlidesPerView();
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+          }
+
+          nextBtn.addEventListener("click", () => {
+            const perView = getSlidesPerView();
+            if (index < slides.length - perView) {
+              index++;
+              updateSlider();
+            }
+          });
+
+          prevBtn.addEventListener("click", () => {
+            if (index > 0) {
+              index--;
+              updateSlider();
+            }
+          });
+
+          window.addEventListener("resize", () => {
+            index = 0;
+            updateSlider();
+          });
+
+          updateSlider();
+        });
+      });
+    </script>
+  </body>
+</html>
